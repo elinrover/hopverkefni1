@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="is">
-    <head>
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Námskeið</title>
@@ -9,19 +9,32 @@
 	</head>
 	<body>
 	   <header>
-			<h1> Prílihúsið</h1>
-			<a href="../index.html">FORSÍÐA</a>
-			<a href="products.html">VÖRUR</a>
-			<a href="course.html">NÁMSKEIÐ</a>
-			<a href="staff.html">STARFSFÓLK</a>
-			<a href="cart.html">karfa</a>
-        </header>
-
-        <h2>Námskeið</h2>
-        <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
-        <img src="../img/climbing-gym.jpg" alt="Mynd_af_prilhusi">
-
-        <div class=card__botton>
+		  <div class="cards">
+			<div class="box__header">
+				<div class="titill">
+					<h1> Prílihúsið</h1>
+				</div>
+				<div class="box__content">
+					<div class="linkar">
+						<a class= "forsida" href="../index.html">FORSÍÐA</a>
+						<a class="linkur" href="products.html">VÖRUR</a>
+						<a class="linkur" href="course.html">NÁMSKEIÐ</a>
+						<a class="linkur" href="staff.html">STARFSFÓLK</a>
+					</div>
+				</div>
+				<div class="box__karfa">
+					<img src="../img/cart.svg">
+					<a href="cart.html">karfa (6)</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="card__text">
+       			<h2>Námskeið</h2>
+      			<p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
+				<img src="../img/climbing-gym.jpg" alt="Mynd_af_prilhusi">
+			</div>	
+       		<div class=card__botton>
             <h2>Almennar upplýsingar</h2> 
             <label for="Nafn">Nafn:</label>
             <input type="text" id="Nafn" required>
@@ -76,43 +89,43 @@
 		</div>
     
 
-        <input type="submit" value="Skrá" >
-
-        
-        <footer>
-    		<div>
-    		<ul title="flokkar">
-    		<label>Vöruflokkar</label>
-    		  <li>Nauðsynjavörur</li>
-    		  <li>Frábærar vörur</li>
-    		  <li>Ómissandi vörur</li>
-    		  <li>Ótrúlegar vörur</li>
-    		  <li>Magnaðar vörur</li>
-    		</ul>
-    		<ul title="flokkar">
-    		  <label>Vöruflokkar</label>
-    		  <li>Trylltar vörur</li>
-    		  <li>Geggjaðar vörur</li>
-    		  <li>Svakalegar vörur</li>
-    		  <li>Fáránlegar vörur</li>
-    		  <li>Klikkaðar vörur</li>
-    		</ul>
-    		<ul title="flokkar">
-    		  <label>Námskeið</label>
-    		  <li>V0 - V1 námskeið</li>
-    		  <li>V2 - V4 námskeið</li>
-    		  <li>V5 - V7 námskeið</li>
-    		  <li>Fjallaklifur námskeið</li>
-    		</ul>
-    		<ul title="flokkar">
-    		  <label>Síður</label>
-    		  <li> Allar vörur</li>
-    		  <li>Starfsfólk</li>
-    		  <li>Námskeið</li>
-    		  <li>Karfa</li>
-    		</ul>
-    		</div>
-    		<div class="vorumerki"> © 2019 Prílihúsið </div>
-    	</footer>
-	</body>
-</html> 
+			<input type="submit" value="Skrá">
+		</section>
+		</main>
+		<footer>
+			<div>
+			<ul title="flokkar">
+			<label>Vöruflokkar</label>
+			  <li>Nauðsynjavörur</li>
+			  <li>Frábærar vörur</li>
+			  <li>Ómissandi vörur</li>
+			  <li>Ótrúlegar vörur</li>
+			  <li>Magnaðar vörur</li>
+			</ul>
+			<ul title="flokkar">
+			  <label>Vöruflokkar</label>
+			  <li>Trylltar vörur</li>
+			  <li>Geggjaðar vörur</li>
+			  <li>Svakalegar vörur</li>
+			  <li>Fáránlegar vörur</li>
+			  <li>Klikkaðar vörur</li>
+			</ul>
+			<ul title="flokkar">
+			  <label>Námskeið</label>
+			  <li>V0 - V1 námskeið</li>
+			  <li>V2 - V4 námskeið</li>
+			  <li>V5 - V7 námskeið</li>
+			  <li>Fjallaklifur námskeið</li>
+			</ul>
+			<ul title="flokkar">
+			  <label>Síður</label>
+			  <li> Allar vörur</li>
+			  <li>Starfsfólk</li>
+			  <li>Námskeið</li>
+			  <li>Karfa</li>
+			</ul>
+			</div>
+			<div class="vorumerki"> © 2019 Prílihúsið </div>
+		  </footer>
+		</body>
+	  </html>
