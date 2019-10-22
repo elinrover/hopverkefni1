@@ -22,9 +22,18 @@ html { /* stylelint-disable-line */
   // TODO fleiri grunn stillingar
 }
 header {
-  
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;  
 }
-
+h1{
+  display: flex;
+  justify-content: right;
+  flex-direction: column; 
+  padding: 20px 0;
+  width: 1200px;
+}
 
 
 // TODO sækja allar sass skrár
