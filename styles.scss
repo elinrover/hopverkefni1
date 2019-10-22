@@ -34,7 +34,21 @@ h1{
   padding: 20px 0;
   width: 1200px;
 }
-
+.box__header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.box__content{
+    display: inline-block;
+    width: 40%;
+}
+.box__karfa{
+    display:flex;
+    align-items:right;
+    justify-content: flex-end;
+}
 
 // TODO sækja allar sass skrár
 @import "scss/...";
