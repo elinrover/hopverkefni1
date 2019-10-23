@@ -10,10 +10,6 @@
 *::after {
   box-sizing: inherit;
 }
-
-html { /* stylelint-disable-line */
-  color: -internal-root-color;
-}
 body{
   display: block;
   }
