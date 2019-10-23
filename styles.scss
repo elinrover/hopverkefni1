@@ -58,12 +58,6 @@ h1{
     font-family: "Open Sans", helvetica, arial, sans-serif;
     width: 180%;
 }
-.forsida{
-    font: black;
-    font-weight: bold;
-    text-decoration: underline;
-    font-family: "open sans", helvetica, arial, sans-serif;
-}
 .linkar{
     display: inline-block;
     flex-direction: row;
@@ -79,6 +73,7 @@ h1{
 }
 .linkar a{
     margin: 10px;
+    text-decoration: none;
 }
 .linkur{
     color: black;
@@ -87,6 +82,7 @@ h1{
     align-items: flex-end;
     flex-direction: row;
     font-family: "Open Sans", helvetica, arial, sans-serif;
+    text-decoration: none;
 }
 div{
     display: block;
@@ -179,6 +175,10 @@ ul{
 }
 label{
   font-weight: bold;
+}
+.linkur--current{
+text-decoration: underline;
+color: pink;
 }
 /* TODO sækja allar sass skrár */
 @import "scss/...";
