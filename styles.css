@@ -57,6 +57,7 @@ h1{
     font-weight: bold;
     font-family: "Open Sans", helvetica, arial, sans-serif;
     width: 180%;
+    
 }
 .linkar{
     display: inline-block;
@@ -163,6 +164,11 @@ margin: 0 auto;
 li{
   color: white;
   font-size: 0.6em;
+  padding-top: 15px;
+}
+li a{
+  color:white;
+  text-decoration: none;
 }
 ul{
   font-size:1em;
@@ -178,7 +184,6 @@ label{
 }
 .linkur--current{
 text-decoration: underline;
-color: pink;
 }
 /* TODO sækja allar sass skrár */
 @import "./scss/staff.scss";
