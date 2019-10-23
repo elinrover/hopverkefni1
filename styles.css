@@ -132,8 +132,8 @@ button{
   background-color: #00b7ff;
   border-radius: 3px;
   border-color: #00b7ff;
-  max-width: 40%;
-  max-height: 10%;
+  /*max-width: 40%;
+  max-height: 10%;*/
   width: 100%;
   height:100%;
 }
@@ -188,14 +188,22 @@ text-decoration: underline;
   padding: 20px;
   margin: 0 auto;
   max-width: 1200px;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-content: space-around;
 }
 .course__card{
-  flex-wrap: wrap;
   max-width: 50%;
-  display: inline;
+  display: inline-block;
   padding: 20px 0;
+}
+.course__buy{ 
+
+}
+.course__button{
+  display: block;
+  margin:20px auto;
 }
 /* TODO sækja allar sass skrár */
 @import "./scss/staff.scss";
