@@ -181,4 +181,10 @@ text-decoration: underline;
 color: pink;
 }
 /* TODO sækja allar sass skrár */
+@import "./scss/cart.scss";
+@import "./scss/corurse.scss";
+@import "./scss/footer.scss";
+@import "./scss/forsida.scss";
+@import "./scss/header.scss";
+@import "./scss/products.scss";
 @import "./scss/staff.scss";
