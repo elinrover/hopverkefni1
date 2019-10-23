@@ -141,17 +141,16 @@ button {
 /* TODO sækja allar sass skrár */
 .staff {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
-  max-width: 1200px; }
+  max-width: 1200px;
+  margin: 0 auto; }
   .staff__cards {
-    max-width: 1200px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 20px; }
-
-.staff_card {
-  max-width: 49%;
-  perspective: 1000px;
-  max-width: 600px; }
+    margin-top: 20px; }
+  .staff__card {
+    max-width: 590px;
+    margin-bottom: 20px; }
+  .staff__mynd {
+    height: 100%; }

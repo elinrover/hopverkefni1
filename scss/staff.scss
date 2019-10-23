@@ -2,26 +2,23 @@
 
 .staff {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     max-width: $max-width;
+    margin: 0 auto;
     
     &__cards {
-        max-width: $max-width;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        margin: $gutter;
+        margin-top: $gutter;
     }
-}
 
+    &__card {
+        max-width: ($max-width/2)-$gutter/2;
+        margin-bottom: $gutter;
+    }
 
-.staff_card {
-    max-width: 49%;
-    perspective: 1000px;
-    max-width: $max-width/2;
-}
-
-.staff_mynd {
-    
+    &__mynd {
+        height: 100%;
+    }
 }
