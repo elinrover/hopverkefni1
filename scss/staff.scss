@@ -1,0 +1,27 @@
+@import "./config";
+
+.staff {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: $max-width;
+    
+    &__cards {
+        max-width: $max-width;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: $gutter;
+    }
+}
+
+
+.staff_card {
+    max-width: 49%;
+    perspective: 1000px;
+    max-width: $max-width/2;
+}
+
+.staff_mynd {
+    
+}
