@@ -6,6 +6,7 @@
 		<title>Námskeið</title>
 		<link rel="stylesheet" href="../grid.css">
 		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="../styles.scss">
 	</head>
 	<body>
 	   <header>
@@ -29,33 +30,75 @@
 			</div>
 		</header>
 		<main>
-			<div class="card__text">
-       			<h2>Námskeið</h2>
-      			<p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
-				<img src="../img/climbing-gym.jpg" alt="Mynd_af_prilhusi">
-			</div>	
-       		<div class=card__botton>
-            <h2>Almennar upplýsingar</h2> 
-            <label for="Nafn">Nafn:</label>
-            <input type="text" id="Nafn" required>
+			<section class="course__cards">
+				<div class="course__card">
+					<h2>Námskeið</h2>
+					<div class="course__text">
+	      				<p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
+					</div>					
+				</div>
+				<div class="course__card">
+					<div class="course__img"></div>
+						<img src="../img/climbing-gym.jpg" alt="Mynd_af_prilhusi">
+					</div>
+				</div>	
+	       		<div class=course__card>
+					<h2>Almennar upplýsingar</h2> 
+		            <label for="Nafn">Nafn:</label>
+		            <input type="text" id="Nafn" required>
 
-            <label for="Heimilisfang">Heimilisfang:</label>
-            <input type="text" id="Heimilsfang" required>
+		            <label for="Heimilisfang">Heimilisfang:</label>
+		            <input type="text" id="Heimilsfang" required>
 
-            <label for="Aldur">Aldur: </label>
-            <input type="number" id="Aldur" required>	
-            
-            <label for="Namskeid">Námskeið:</label>
-            <select id="Namskeid">
-                <option value="V0 - V1">V0 - V1</option>
-                <option value="V2 - V4"> V2 - V4</option>
-                <option value="V5 - V7"> V5 - V7</option>
-                <option value="Krakkanámskeið"> Krakkanámskeið</option>
-                <option value="Fjallaklifur"> Fjallaklifur</option>
-            </select>
-		</div> 
-<div>	
-	<div>
+		            <label for="Aldur">Aldur: </label>
+		            <input type="number" id="Aldur" required>	
+
+		            <label for="Namskeid">Námskeið:</label>
+		            <select id="Namskeid">
+		                <option value="V0 - V1">V0 - V1</option>
+		                <option value="V2 - V4"> V2 - V4</option>
+		                <option value="V5 - V7"> V5 - V7</option>
+		                <option value="Krakkanámskeið"> Krakkanámskeið</option>
+		                <option value="Fjallaklifur"> Fjallaklifur</option>
+		            </select>
+				</div>
+				<div class=course__card>
+					<h2>Greiðsluupplýsingar</h2>
+					<label for="Kortanumer">Kortanúmer:</label>
+					<input type="text" id="Kortanumer" required>
+				
+					<label for="Korthafi">Korthafi:</label>
+					<input type="text" id="Korthafi" required>
+				
+					<label for="Gildistími">Gildistími: </label>
+					<label for="Manud">Mán </label>
+					<select id="Manud">
+						<option value="Janúar">01</option>
+						<option value="Febrúar">02 </option>
+						<option value="Mars">03</option>
+						<option value="Apríl">04</option>
+						<option value="Maí">05</option>
+						<option value="Júní">06</option>
+						<option value="Júlí">07 </option>
+						<option value="Ágúst">08</option>
+						<option value="September">09</option>
+						<option value="Oktomber">10</option>		
+						<option value="Nóvember">11 </option>
+						<option value="Desember">12</option>
+					</select>
+					<label for="Ar">Ár </label>
+					<select id="Ar">
+						<option value="2019">2019</option>
+						<option value="2020">2020 </option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+					</select>
+				</div>
+				<div class="couse__button">
+					<button>Kaupa</button>
+				</div>
+			</section>
+		</main>
 		<footer>
 			<div class="footer__cards">
 			  <div class="footer__card">
