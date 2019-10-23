@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="is">
-    <head>
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Námskeið</title>
@@ -9,13 +9,25 @@
 	</head>
 	<body>
 	   <header>
-			<h1> Prílihúsið</h1>
-			<a href="../index.html">FORSÍÐA</a>
-			<a href="products.html">VÖRUR</a>
-			<a href="course.html">NÁMSKEIÐ</a>
-			<a href="staff.html">STARFSFÓLK</a>
-			<a href="cart.html">karfa</a>
-        </header>
+		  <div class="cards">
+			<div class="box__header">
+				<div class="titill">
+					<h1> Prílihúsið</h1>
+				</div>
+				<div class="box__content">
+            <div class="linkar">
+                <a class= "forsida" href="../index.html">FORSÍÐA</a>
+                <a class="linkur" href="products.html">VÖRUR</a>
+                <a class="linkur" href="course.html">NÁMSKEIÐ</a>
+                <a class="linkur" href="staff.html">STARFSFÓLK</a>
+              </div>
+				</div>
+				<div class="box__karfa">
+					<img src="../img/cart.svg">
+					<a href="cart.html">karfa (6)</a>
+				</div>
+			</div>
+		</header>
         <div>
             <img src="../img/Backpack.jpg" alt="Bakpoki">
             <h2>Bakpoki</h2>
@@ -65,7 +77,7 @@
 			<input type="number" id="Fjoldi_6" value="1" min="1" >
 			<button class="Setja_i_korfu">Setja í körfu</button>
         </div>
-<footer>
+  <footer>
     <div>
     <ul title="flokkar">
     <label>Vöruflokkar</label>
@@ -99,6 +111,6 @@
     </ul>
     </div>
     <div class="vorumerki"> © 2019 Prílihúsið </div>
-</footer>
+  </footer>
 </body>
 </html> 
