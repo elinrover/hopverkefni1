@@ -425,13 +425,14 @@ width: 50%;
   display:flex;
   flex-direction:row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   max-width:1200px;
   font:1rem "open sans", helvetica, arial, sans-serif;
 }
 .product__card{
   display: flex;
-  width:30%;
+  width:26%;
   margin: 20px 0;
 }
 .vara{
