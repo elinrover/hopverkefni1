@@ -1,3 +1,5 @@
+@import "./config.scss";
+
 footer{
     background-color: #00b7ff;
     display: flex;
@@ -16,7 +18,7 @@ footer{
   .footer__card{
       display: flex;
       padding-right: 90px;
-      font-family: "Open Sans", helvetica, arial, sans-serif;
+      font-family: $p-fonts;
   }
   li{
     color: white;
@@ -33,7 +35,7 @@ footer{
   }
   .vorumerki{
     margin: 0 auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $h-fonts;
     font-size: 0.8em;
   }
   label{
@@ -65,6 +67,6 @@ footer{
     display: inline-block;
     align-items: flex-end;
     flex-direction: row;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-family: $p-fonts;
     text-decoration: none;
 }
