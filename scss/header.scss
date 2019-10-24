@@ -70,8 +70,8 @@ header {
 
 	  &__current {
 			color: black;
-	  	font-family: $p-fonts;
-			text-decoration: line-through;
+	  		font-family: $p-fonts;
+			text-decoration: underline;
 			font-weight: bold;
 			text-transform: uppercase;
 	  }
