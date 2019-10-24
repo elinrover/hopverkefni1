@@ -51,9 +51,7 @@ h1{
 		  justify-content: center;
 		  widows: 100%;
 		  max-width: 500px;
-	  }
-  }
-  .linkar a{
+ 		& a{
 	  margin: 10px;
 	  text-decoration: none;
   }
@@ -73,4 +71,4 @@ h1{
 			font-weight: bold;
 			text-transform: uppercase;
 	  }
-  }
+	}
