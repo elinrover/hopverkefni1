@@ -2,52 +2,51 @@
 
 .course {
     display: flex;
-    justify-content: center;
     max-width: $max-width;
     margin: 0 auto;
-    color:red;
-    
-    &__cards {
-        display: flex;
-        width: 100%;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        margin: $gutter;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: $gutter;
+
+    & h2 {
+        font-family: $h-fonts;
+    }
+
+    & p {
         font-family: $p-fonts;
     }
+    & label{
+        font-family: $p-fonts;
+        font-weight: 500;
+    }
+    
     &__card{
-        max-width: 50%;
+        width: 50%;
         display: inline-block;
-        padding: 20px 0;  
     }
-    &__buy{
-        min-width: 30%;
-        margin-right:20%; 
-    }
+
     &__buy__info{
-        text-decoration: none;
         display: flex;
         justify-content: space-between;
-        margin-right: 20px;
+        padding: 5px;
+    }
+    &__input{
+        width: 80%;
     }
     &__button{
-
+        width: 100%;
+        margin-left:35%;
+        margin-right: 35%;
+         &__init{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            align-items: center;
+            background-color:$color-four;
+            border-radius: 3px;
+            border-color:$color-four;
+            min-width: 50%;
+         }
     }
 }
-
-
- /* .course__button{
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    background-color: #00b7ff;
-    border-radius: 3px;
-    border-color: #00b7ff;
-    max-width: 50%;
-    max-height: 100%;
-    width: 100%;
-    height:100%;
-    transition: 200ms ease-in-out;
-  }*/
