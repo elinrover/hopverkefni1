@@ -229,10 +229,14 @@ text-decoration: underline;
 .course__buy{ 
 width: 50%;
 }
-
 .course__button{
-  display: block;
-  margin:20px auto;
+  width: 20%;
+  margin: auto;
+  padding: 20px;
+}
+.course__buy__info{
+  margin-top: 10px;
+  margin-right: 10px
 }
 /* TODO sækja allar sass skrár */
 @import "./scss/staff.scss";
