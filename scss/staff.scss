@@ -47,6 +47,18 @@
         height: 100%;
         backface-visibility: hidden;
         transform: rotateY(180deg);
+<<<<<<< HEAD
         top: -500px;
+=======
+        top: -620px;
+
+        & h2 {
+            font-family: $h-fonts;
+        }
+
+        & p {
+            font-family: $p-fonts;
+        }
+>>>>>>> 72a0a07ae0a9518c4daa6feb29f356db5963a3d2
     }
 }

@@ -1,70 +1,54 @@
-footer{
-    background-color: #00b7ff;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-  }
-  .footer__cards{
-  display:flex;
+@import "./config.scss";
+
+footer {
+  background-color: #00b7ff;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.footer__cards {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: $max-width;
   max-width: 100%;
   font-size: 21px;
   margin: 0 auto;
-  }
-  .footer__card{
-      display: flex;
-      padding-right: 90px;
-      font-family: "Open Sans", helvetica, arial, sans-serif;
-  }
-  li{
-    color: white;
-    font-size: 0.6em;
-    padding-top: 15px;
-  }
-  li a{
-    color:white;
-    text-decoration: none;
-  }
-  ul{
-    font-size:1em;
-    list-style: none;
-  }
-  .vorumerki{
-    margin: 0 auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.8em;
-  }
-  label{
-    font-weight: bold;
-  }
-  .linkur--current{
-  text-decoration: underline;
-  }
-  .linkar{
-    display: inline-block;
-    flex-direction: row;
-    align-items: flex-end;
 }
-@media screen{
-    .linkar{
-        display:flex;
-        justify-content: center;
-        widows: 100%;
-        max-width: 500px; 
-    }
+
+.footer__card {
+  display: flex;
+  padding-right: 90px;
+  font-family: $p-fonts;
 }
-.linkar a{
-    margin: 10px;
-    text-decoration: none;
+
+li {
+  color: white;
+  font-size: 0.6em;
+  padding-top: 15px;
 }
-.linkur{
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    align-items: flex-end;
-    flex-direction: row;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
-    text-decoration: none;
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: black;
+}
+
+ul {
+  font-size: 1em;
+  list-style: none;
+}
+
+.vorumerki {
+  margin: 0 auto;
+  font-family: $h-fonts;
+  font-size: 0.8em;
+}
+
+label {
+  font-weight: bold;
 }
