@@ -226,10 +226,52 @@ text-decoration: underline;
   display: inline-block;
   padding: 20px 0;
 }
+<<<<<<< HEAD
+.cards__product{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font: 1rem "Open Sans", helvetica, arial, sans-serif;
+  justify-content: space-between;
+  align-content: space-around;
+  max-width: 1200px;
+}
+.card__product{
+  max-width: 30%;
+  width: 100%;
+  display: flex;
+  margin: 20px 0;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.img__product{
+  max-width: 100%;
+  height:auto;
+}
+.text__product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info__product{
+  width: 100%;
+  font-size: 80%;
+}
+.product__info{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+=======
 .course__buy{ 
 width: 50%;
 }
 .course__button{
+<<<<<<< HEAD
   width: 20%;
   margin: auto;
   padding: 20px;
@@ -237,6 +279,11 @@ width: 50%;
 .course__buy__info{
   margin-top: 10px;
   margin-right: 10px
+=======
+  display: block;
+  margin:20px auto;
+>>>>>>> 9079bf02794f761b81a4dcd307f6bcbc95901391
+>>>>>>> 4624b104c9e8327d12141e97a98e62cb7f15a13d
 }
 /* TODO sækja allar sass skrár */
 @import "./scss/staff.scss";
