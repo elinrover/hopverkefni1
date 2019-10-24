@@ -274,13 +274,15 @@ div {
 
 .texti {
   display: flex;
-  font-family: "Open sans", helvetica, Arial, sans-serif;
+  font-family: "Oswald", Verdana, serif;
   flex-direction: column;
   padding-left: 20px;
   font-size: 24px;
   width: 100%;
   justify-content: space-evenly;
   justify-items: center; }
+  .texti__a {
+    font-family: "Open sans", helvetica, Arial, sans-serif; }
 
 img {
   max-width: 100%;
