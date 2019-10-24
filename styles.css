@@ -152,7 +152,7 @@ footer {
 .footer__card {
   display: flex;
   padding-right: 90px;
-  font-family: "Open Sans", helvetica, arial, sans-serif; }
+  font-family: 'Open Sans', helvetica, arial, sans-serif; }
 
 li {
   color: white;
@@ -164,7 +164,7 @@ ul {
 
 .vorumerki {
   margin: 0 auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Oswald', Verdana, Tahoma, sans-serif;
   font-size: 0.8em; }
 
 label {
@@ -307,7 +307,8 @@ header {
 
 h1 {
   font-size: 2em;
-  font-family: "Open Sans", helvetica, arial, sans-serif; }
+  font-family: "Oswald", Verdana, serif;
+  font-weight: bold; }
 
 .box__header {
   display: 1200px;
@@ -334,7 +335,7 @@ h1 {
   align-items: center;
   justify-content: flex-end;
   font-weight: bold;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Open sans", helvetica, Arial, sans-serif;
   width: 180%; }
 
 .linkar {
@@ -359,7 +360,9 @@ h1 {
   display: inline-block;
   align-items: flex-end;
   flex-direction: row;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "Open sans", helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
   text-decoration: none; }
 
 .staff {
@@ -399,3 +402,5 @@ h1 {
     backface-visibility: hidden;
     transform: rotateY(180deg);
     top: -500px; }
+    .staff__text h2 {
+      font-family: 'Oswald'; }
