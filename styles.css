@@ -135,7 +135,7 @@ img{
   max-width:100%;
   height: auto;
 }
-button{
+.forsida__button{
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -143,8 +143,8 @@ button{
   background-color: #00b7ff;
   border-radius: 3px;
   border-color: #00b7ff;
-  /*max-width: 40%;
-  max-height: 10%;*/
+  max-width: 40%;
+  max-height: 10%;
   width: 100%;
   height:100%;
   transition: 300ms ease-in-out;
@@ -210,23 +210,7 @@ label{
 text-decoration: underline;
 }
 
-/*course*/
-.course__cards{
-  display:flex;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 1200px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-around;
-}
-.course__card{
-  max-width: 50%;
-  display: inline-block;
-  padding: 20px 0;
-}
-<<<<<<< HEAD
+/*product*/
 .cards__product{
   display: flex;
   flex-direction: row;
@@ -266,24 +250,48 @@ text-decoration: underline;
   flex-flow: row wrap;
   justify-content: center;
   padding: 20px;
-=======
-.course__buy{ 
-width: 50%;
+
 }
-.course__button{
-<<<<<<< HEAD
-  width: 20%;
-  margin: auto;
-  padding: 20px;
+/*course*/
+/*.course__cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font: 1rem "Open Sans", helvetica, arial, sans-serif;
+  justify-content: space-between;
+  align-content: space-around;
+  max-width: 1200px;
+
+}
+.course__card{
+  max-width: 50%;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.course__buy{ 
+  width: 30%;
+  margin-right:20%; 
+
 }
 .course__buy__info{
-  margin-top: 10px;
-  margin-right: 10px
-=======
-  display: block;
-  margin:20px auto;
->>>>>>> 9079bf02794f761b81a4dcd307f6bcbc95901391
->>>>>>> 4624b104c9e8327d12141e97a98e62cb7f15a13d
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
 }
+.course__button{
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #00b7ff;
+  border-radius: 3px;
+  border-color: #00b7ff;
+  max-width: 50%;
+  max-height: 100%;
+  width: 100%;
+  height:100%;
+  transition: 200ms ease-in-out;
+}*/
 /* TODO sækja allar sass skrár */
 @import "./scss/staff.scss";
