@@ -210,49 +210,6 @@ label{
 text-decoration: underline;
 }
 
-/*course*/
-.course__cards{
-  display:flex;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: red; }
-  .course__cards {
-    display: flex;
-    width: 100%;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    margin: 20px;
-    font-family: "Open sans", helvetica, Arial, sans-serif; }
-  .course__card {
-    max-width: 50%;
-    display: inline-block;
-    padding: 20px 0; }
-  .course__buy {
-    min-width: 30%;
-    margin-right: 20%; }
-  .course__buy__info {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px; }
-
-  .course__button{
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    background-color: #00b7ff;
-    border-radius: 3px;
-    border-color: #00b7ff;
-    max-width: 50%;
-    max-height: 100%;
-    width: 100%;
-    height:100%;
-    transition: 200ms ease-in-out;
-  }
 footer {
   background-color: #00b7ff;
   display: flex;
@@ -374,7 +331,7 @@ img {
   justify-content: center;
   padding: 20px;
 }
-.course__buy{ 
+./*course__buy{ 
 width: 50%;
 }
 .course__button{
@@ -387,7 +344,7 @@ width: 50%;
   margin-right: 10px;
   display: block;
   margin:20px auto;
-}
+}*/
 .Setja_i_korfu{
   display:flex;
   justify-content: space-around;
@@ -411,6 +368,7 @@ width: 50%;
 }
 /* TODO sækja allar sass skrár */
 @import "./scss/staff.scss";
+@import "./scss/course.scss";
   
 
 @media screen {
@@ -514,3 +472,41 @@ width: 50%;
       font-family: "Oswald", Verdana, serif; }
     .staff__text p {
       font-family: "Open sans", helvetica, Arial, sans-serif; }
+      
+      .course {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 20px;}
+        .course h2 {
+          font-family: "Oswald", Verdana, serif; }
+        .course p {
+          font-family: "Open sans", helvetica, Arial, sans-serif; }
+        .course label {
+          font-family: "Open sans", helvetica, Arial, sans-serif;
+          font-weight: 500; }
+        .course__card {
+          width: 50%;
+          display: inline-block; }
+        .course__buy__info {
+          display: flex;
+          justify-content: space-between;
+          padding: 5px; }
+        .course__input {
+          width: 80%; }
+        .course__button {
+          width: 100%;
+          margin-left: 35%;
+          margin-right: 35%; }
+          .course__button__init {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: #00b7ff;
+            border-radius: 3px;
+            border-color: #00b7ff;
+            min-width: 50%; }
