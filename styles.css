@@ -227,8 +227,9 @@ text-decoration: underline;
   padding: 20px 0;
 }
 .course__buy{ 
-
+width: 50%;
 }
+
 .course__button{
   display: block;
   margin:20px auto;
