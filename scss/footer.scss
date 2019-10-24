@@ -29,6 +29,11 @@ footer{
     color:white;
     text-decoration: none;
   }
+
+  li a:hover {
+    color: black;
+  }
+
   ul{
     font-size:1em;
     list-style: none;
@@ -41,32 +46,3 @@ footer{
   label{
     font-weight: bold;
   }
-  .linkur--current{
-  text-decoration: underline;
-  }
-  .linkar{
-    display: inline-block;
-    flex-direction: row;
-    align-items: flex-end;
-}
-@media screen{
-    .linkar{
-        display:flex;
-        justify-content: center;
-        widows: 100%;
-        max-width: 500px; 
-    }
-}
-.linkar a{
-    margin: 10px;
-    text-decoration: none;
-}
-.linkur{
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    align-items: flex-end;
-    flex-direction: row;
-    font-family: $p-fonts;
-    text-decoration: none;
-}
