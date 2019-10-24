@@ -331,7 +331,7 @@ img {
   justify-content: center;
   padding: 20px;
 }
-./*course__buy{ 
+/*course__buy{ 
 width: 50%;
 }
 .course__button{
@@ -412,9 +412,13 @@ width: 50%;
   .linkur__current {
     color: black;
     font-family: "Open sans", helvetica, Arial, sans-serif;
-    text-decoration: underline;
     font-weight: bold;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-decoration: underline; }
+
+    .linkur__current:hover{
+      color:white;
+    }
 
 .product__info {
   max-width: 400px;
