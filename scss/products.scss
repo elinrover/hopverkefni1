@@ -1,1 +1,34 @@
 @import "./config.scss";
+
+.product__info {
+    max-width: $max-width/3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    margin: 0 auto;
+    
+    &__card {
+        
+    }
+
+    &__mynd {
+      width: 50px;
+    }
+
+    &__text {
+        text-align: center;
+
+        & h2 {
+            font-family: $h-fonts;
+
+        }
+
+        & p {
+            font-family: $p-fonts;
+
+        }
+    }
+
+}

@@ -371,6 +371,23 @@ h1 {
     font-weight: bold;
     text-transform: uppercase; }
 
+.product__info {
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  margin: 0 auto; }
+  .product__info__mynd {
+    width: 50px; }
+  .product__info__text {
+    text-align: center; }
+    .product__info__text h2 {
+      font-family: "Oswald", Verdana, serif; }
+    .product__info__text p {
+      font-family: "Open sans", helvetica, Arial, sans-serif; }
+
 .staff {
   display: flex;
   justify-content: center;
