@@ -1,9 +1,11 @@
+@import "./config.scss";
+
 div{
     display: block;
 }
 .titill{
     margin: 0 auto;
-    font-family: "Oswald" Verdana, serif;
+    font-family: $h-fonts;
     font-size: 32px;
     
 }
@@ -29,13 +31,17 @@ div{
 }
 .texti{
   display: flex;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: $h-fonts;
   flex-direction: column;
   padding-left: 20px;
   font-size: 24px;
   width: 100%;
   justify-content: space-evenly;
   justify-items: center; 
+
+  &__a {
+    font-family: $p-fonts;
+  }
 }
 img{
   max-width:100%;
