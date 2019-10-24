@@ -1,18 +1,14 @@
+@import "./config"
 header {
 	background-color: #ff5000;
 	display: flex;
 	padding: 0 20px;  
 	justify-content: center;
-  }
-  h1{
-<<<<<<< HEAD
-    font-size: 2em;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
-=======
+}
+h1{
 	font-size: 2em;
 	font-family: $h-fonts;
 	font-weight: bold;
->>>>>>> 72a0a07ae0a9518c4daa6feb29f356db5963a3d2
   }
   .box__header{
 	  display:1200px;
@@ -36,23 +32,12 @@ header {
 	  }
   }
   .box__karfa{
-<<<<<<< HEAD
-      display:flex;
-      align-items:center;
-      justify-content: flex-end;
-      font-weight: bold;
-      font-family: "Open Sans", helvetica, arial, sans-serif;
-      width: 180%;
-      
-=======
 	  display:flex;
 	  align-items:center;
 	  justify-content: flex-end;
 	  font-weight: bold;
 	  font-family: $p-fonts;
 	  width: 180%;
-	  
->>>>>>> 72a0a07ae0a9518c4daa6feb29f356db5963a3d2
   }
   .linkar{
 	  display: inline-block;
@@ -71,16 +56,6 @@ header {
 	  margin: 10px;
 	  text-decoration: none;
   }
-<<<<<<< HEAD
-  .linkur{
-      color: black;
-      font-weight: bold;
-      display: inline-block;
-      align-items: flex-end;
-      flex-direction: row;
-      font-family: "Open Sans", helvetica, arial, sans-serif;
-      text-decoration: none;
-=======
   
   .linkur {
 	  color: black;
@@ -98,5 +73,4 @@ header {
 			font-weight: bold;
 			text-transform: uppercase;
 	  }
->>>>>>> 72a0a07ae0a9518c4daa6feb29f356db5963a3d2
   }
