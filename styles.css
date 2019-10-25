@@ -400,10 +400,11 @@ div {
     font-family: "Open sans", helvetica, Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration: underline; }
+    border-bottom:1px solid black; }
 
     .linkur__current:hover{
-      color:white;
+      border-bottom:1px solid #fffcf2;
+      color: #fffcf2;
     }
 
 .product__info {
