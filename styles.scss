@@ -140,6 +140,7 @@ img{
   max-height: 10%;
   width: 100%;
   height:100%;
+  transition: all 300ms ease-in-out;
 }
 footer{
   background-color: #00b7ff;
@@ -179,7 +180,6 @@ label{
 }
 .linkur__current{
 text-decoration: underline;
-color: pink;
 }
 /* TODO sækja allar sass skrár */
 @import "./scss/cart";
