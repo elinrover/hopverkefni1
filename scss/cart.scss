@@ -1,1 +1,70 @@
 @import "./config.scss";
+
+.cart {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        max-width: $max-width;
+        justify-content: center;
+    }
+
+    &__title {
+        display: flex;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    &__card__mynd {
+        margin-right: 20px;
+    }
+
+    &__card__content__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card__form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__numer {
+        width: 100%;
+    }
+
+    &__upgrade {
+        background: none;
+        text-align: right;
+        border: solid 1px black;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 120px;
+        width: 100%;
+        transition: 200ms ease-in-out;
+    }
+
+    &__delete {
+        background: none;
+        text-align: right;
+        border: solid 1px black;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 120px;
+        width: 100%;
+        transition: 200ms ease-in-out;
+    }
+}

@@ -1,456 +1,132 @@
-@import "scss/config";
-
+@charset "UTF-8";
 * {
   padding: 0;
-  margin: 0;
-} 
+  margin: 0; }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
-body{
-  display: block;
-  }
-  /* TODO fleiri grunn stillingar */
-header {
-  background-color: #ff5000;
+  box-sizing: inherit; }
+
+html {
+  /* stylelint-disable-line */
+  color: -internal-root-color; }
+
+body {
+  display: block; }
+
+/* TODO fleiri grunn stillingar */
+/* TODO sækja allar sass skrár */
+.cart {
   display: flex;
-  padding: 0 20px;  
   justify-content: center;
-}
-h1{
-  font-size: 2em;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
-}
-.box__header{
-    display:1200px;
+  padding: 20px; }
+  .cart__box {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding: 20px 0;
-}
-.box__content{
+    max-width: 1200px;
+    justify-content: center; }
+  .cart__title {
+    display: flex; }
+  .cart__card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-align: center;
-    font-weight: bold;
-}
-@media screen{
-    .box__content{
-        max-width: 500px;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-.box__karfa{
-    display:flex;
-    align-items:center;
-    justify-content: flex-end;
-    font-weight: bold;
-    font-family: "Open Sans", helvetica, arial, sans-serif;  
-    width:24%;
-    margin-left: 250px;
-  }
-@media(max-width:800px){
-  .box__karfa{
-    margin-left: 150px;
-  }
-  .linkar{
-    padding-left:190px;
-  }
-}
-.box__karfa a{
-  text-decoration: none;
-  color: black;
-  transition: 200ms ease-in-out;
-}
-.box__karfa a:hover{
-  color: white;
-}
-.linkar{
-    display: inline-block;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-left: 300px;
-}
-@media screen{
-    .linkar{
-        display:flex;
-        justify-content: center;
-        widows: 100%;
-        max-width: 500px;
-    }
-}
-.linkar a{
-    margin: 10px;
-    text-decoration: none;
-}
-.linkur{
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    align-items: flex-end;
-    flex-direction: row;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
-    text-decoration: none;
-    transition: 200ms ease-in-out;
-}
-.linkur:hover{
-  color: white;
-}
-div{
-    display: block;
-}
-.titill{
-    margin: 0 auto;
-    font-family: "Oswald" Verdana, serif;
-    font-size: 32px;
-    
-}
-.main__upplysingar{
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 20px;
-}
-.cards{
+    padding: 20px 0; }
+  .cart__card__mynd {
+    margin-right: 20px; }
+  .cart__card__content__bottom {
+    display: flex;
+    flex-direction: column; }
+  .cart__card__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .cart__numer {
+    width: 100%; }
+  .cart__upgrade {
+    background: none;
+    text-align: right;
+    border: solid 1px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 120px;
+    width: 100%;
+    transition: 200ms ease-in-out; }
+  .cart__delete {
+    background: none;
+    text-align: right;
+    border: solid 1px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 120px;
+    width: 100%;
+    transition: 200ms ease-in-out; }
+
+.course {
+  display: flex;
   max-width: 1200px;
+  margin: 0 auto;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px; }
+  .course h2 {
+    font-family: "Oswald", Verdana, serif; }
+  .course p {
+    font-family: "Open sans", helvetica, Arial, sans-serif; }
+  .course label {
+    font-family: "Open sans", helvetica, Arial, sans-serif;
+    font-weight: 500; }
+  .course__card {
+    width: 50%;
+    display: inline-block; }
+  .course__buy__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px; }
+  .course__input {
+    width: 75%; }
+  .course__button {
+    width: 100%;
+    margin-left: 35%;
+    margin-right: 35%; }
+    .course__button__init {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+      background-color: #00b7ff;
+      border-radius: 3px;
+      border-color: #00b7ff;
+      min-width: 50%; }
+      .course__button__init:hover {
+        border-color: #ff5000;
+        background-color: #ff5000; }
+
+.product__info {
+  max-width: 400px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-content: space-around; }
+  .product__info__cards {
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;
-}
-.card{
-    max-width: 45%;
-    width: 100%;
+    align-content: space-around; }
+  .product__info__card {
+    max-width: 30%;
     display: flex;
-    padding: 20px 0;
-}
-.texti{
-  display: flex;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
-  flex-direction: column;
-  padding-left: 20px;
-  font-size: 24px;
-  width: 100%;
-  justify-content: space-evenly;
-  justify-items: center;
-}
-img{
-  max-width:100%;
-  height: auto;
-}
-.button__forsida{
-/* TODO sækja allar sass skrár */
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: rgb(0, 183, 255);
-max-width: 40%;
-max-height: 55%;
-width: 100%;
-height: 100%;
-text-decoration: none;
-border-radius: 3px;
-border-color: rgb(0, 183, 255);
-transition: all 200ms ease-in-out 0s;
-}
-.button__forsida:hover{
-  background-color: #ff5000;
-  border-color: #ff5000;
-}
-.button__forsida a:hover{
-  color:white;
-}
-.button__forsida a{
-  color: black;
-  text-decoration: none;
-  transition: 200ms ease-in-out;
-}
-footer{
-  background-color: #00b7ff;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-}
-.footer__cards{
-display:flex;
-flex-direction: row;
-flex-wrap: wrap;
-max-width: 1200px;
-max-width: 100%;
-font-size: 21px;
-margin: 0 auto;
-}
-.footer__card{
-    display: flex;
-    padding-right: 90px;
-    font-family: "Open Sans", helvetica, arial, sans-serif;
-}
-li{
-  color: white;
-  font-size: 0.6em;
-  padding-top: 15px;
-}
-li a{
-  color:white;
-  text-decoration: none;
-  transition: 200ms ease-in-out;
-}
-li a:hover{
-  color: black;
-}
-ul{
-  font-size:1em;
-  list-style: none;
-}
-.vorumerki{
-  margin: 0 auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.8em;
-}
-label{
-  font-weight: bold;
-}
-.linkur--current{
-text-decoration: underline;
-}
-
-footer {
-  background-color: #00b7ff;
-  display: flex;
-  flex-direction: column;
-  padding: 40px; }
-
-.footer__cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  max-width: 100%;
-  font-size: 21px;
-  margin: 0 auto; }
-
-.footer__card {
-  display: flex;
-  padding-right: 90px;
-  font-family: "Open sans", helvetica, Arial, sans-serif; }
-
-li {
-  color: white;
-  font-size: 0.6em;
-  padding-top: 15px; }
-
-li a {
-  color: white;
-  text-decoration: none; }
-
-li a:hover {
-  color: black; }
-
-ul {
-  font-size: 1em;
-  list-style: none; }
-
-.vorumerki {
-  margin: 0 auto;
-  font-family: "Oswald", Verdana, serif;
-  font-size: 0.8em; }
-
-label {
-  font-weight: bold; }
-
-div {
-  display: block; }
-
-.titill {
-  margin: 0 auto;
-  font-family: "Oswald", Verdana, serif;
-  font-size: 32px; }
-
-.main__upplysingar {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 20px; }
-
-.cards {
-  max-width: 1200px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-around;
-}
-.cards__product{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font: 1rem "Open Sans", helvetica, arial, sans-serif;
-  justify-content: space-between;
-  align-content: space-around;
-  max-width: 1200px;
-}
-.card__product{
-  max-width: 30%;
-  width: 100%;
-  display: flex;
-  margin: 20px 0;
-}
-.product{
-  display: flex;
-  flex-direction: column;
-  font-family: "Oswald", Verdana, serif;
-  flex-direction: column;
-  padding-left: 20px;
-  font-size: 24px;
-  width: 100%;
-  justify-content: space-evenly;
-  justify-items: center; }
-  .texti__a {
-    font-family: "Open sans", helvetica, Arial, sans-serif; }
-.img__product{
-  max-width: 100%;
-  height:auto;
-}
-.text__product{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.info__product{
-  width: 100%;
-  font-size: 80%;
-}
-.product__info{
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 20px;
-}
-.Setja_i_korfu{
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 3px;
-  max-width:60%;
-  max-height: 30%;
-  transition: 200ms ease-in-out;
-}
-.Setja_i_korfu:hover{
-  background-color:#00b7ff;
-  border: #00b7ff;
-}
-.img__button{
-  max-height: 15px;
-  max-width:15px;
-}
-.Setja_i_korfu p{
-  text-align: center;
-  font-weight: bold; 
-}
-/* TODO sækja allar sass skrár */
-@import "./scss/staff.scss";
-@import "./scss/course.scss";
-  
-
-@media screen {
-  .box__content {
-    max-width: 500px;
-    flex-direction: column;
-    justify-content: center; } }
-
-.box__karfa {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-weight: bold;
-  font-family: "Open sans", helvetica, Arial, sans-serif;
-  width: 180%; }
-
-.linkar {
-  display: inline-block;
-  flex-direction: row;
-  align-items: flex-end; }
-
-@media screen {
-  .linkar {
-    display: flex;
-    justify-content: center;
-    widows: 100%;
-    max-width: 500px; } }
-
-.linkar a {
-  margin: 10px;
-  text-decoration: none; }
-
-.linkur {
-  color: black;
-  display: inline-block;
-  align-items: flex-end;
-  flex-direction: row;
-  font-family: "Open sans", helvetica, Arial, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase; }
-  .linkur__current {
-    color: black;
-    font-family: "Open sans", helvetica, Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom:1px solid black; }
-
-    .linkur__current:hover{
-      border-bottom:1px solid #fffcf2;
-      color: #fffcf2;
-    }
-
-.product__info {
-  display: flex;
-  padding:20px;
-  justify-content: center;
-  align-content: center;
-}
-.product__cards{
-  display:flex;
-  flex-direction:row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width:1200px;
-  font:1rem "open sans", helvetica, arial, sans-serif;
-}
-.product__card{
-  display: flex;
-  width:26%;
-  margin: 20px 0;
-}
-.vara{
-  display:flex;
-  flex-direction: column;
-  max-width: 100%;
-  justify-content: space-between;
-}
-.product__text{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow:1;
-}
-.product__text2{
-  width:100%;
-  font-size:80%;
-}
-.product__fjoldi{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.product__mynd {
-    max-width: 100%; }
+    padding: 20px 0; }
+  .product__info__mynd {
+    width: 50px; }
   .product__info__text {
     text-align: center; }
     .product__info__text h2 {
@@ -499,73 +175,3 @@ div {
       font-family: "Oswald", Verdana, serif; }
     .staff__text p {
       font-family: "Open sans", helvetica, Arial, sans-serif; }
-      
-      .course {
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        padding: 20px;
-        justify-content: center;}
-        .course h2 {
-          font-family: "Oswald", Verdana, serif; }
-        .course p {
-          font-family: "Open sans", helvetica, Arial, sans-serif; }
-        .course label {
-          font-family: "Open sans", helvetica, Arial, sans-serif;
-          font-weight: 500; }
-        .course__card {
-          width: 100%;
-          max-width:35%;
-         }
-          @media(max-width:500px){
-            .course__card{
-              max-width:100%;
-            }
-          }
-          @media(max-width:800px){
-            .course__card{
-              max-width:50%;
-            }
-            .course__buy__info{
-              width:80%;
-            }
-          }
-          .course__buy{
-            padding-right:50px;
-          }
-        .course__buy__info {
-          display: flex;
-          justify-content: space-between;
-          padding: 5px; }
-        .course__input {
-          max-width: 60%;
-          width:100%; }
-        .course__button {
-          width: 100%;
-          margin-left: 35%;
-          margin-right: 35%;
-          padding-top: 20px; }
-          .course__input__kort1{
-            width:40px;
-          }
-          .course__input__kort2{
-            width:60px;
-          }
-          .course__button__init {
-            height: 25px;
-            display: flex;
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
-            align-items: center;
-            background-color: #00b7ff;
-            border-radius: 3px;
-            border-color: #00b7ff;
-            min-width: 50%; }
-            .course__button__init:hover{
-              border-color: #ff5000;
-              background-color: #ff5000;
-
-            }
