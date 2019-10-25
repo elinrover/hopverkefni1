@@ -7,6 +7,8 @@ Verkefnið felur í sér að skapa vefssíðu fyrir Prílihúsið þar sem hægt
 Vefsíðan samanstendur af fimm slóðum, þ.e. forsíðu, vöru, námskeiðum, starfsfólki og körfu. Hver síða hefur sinn eigin html kóða og scss og er hver einasta scss skrá tengd við styles.css sem geymir svo alla style kóða sem notaðir voru á vefsíðuna. Einnig eru allar scss skrárnar tengdar við config.scss sem inniheldur styttingar stillingar, t.d. í stað þess að þurfa að skrifa max-width: 1200px; í hvert sinn er hægt að skrifa $max-width.
 Styles.css er skipulagt þannig að hvert @import (t.d. ./forsida.scss) kemur á fæti öðrum og þar er hægt að sjá hvað er inni í hverri scss skrá fyrir sig.
 
+Hins vegar gekk ekkert allt of vel hjá okkur að nota scss svo við gerðum back up í styles.css
+
 ## Hópurinn
 
 Við vorum þrjár saman að vinna verkefnið og heitum við Eva Margrét Hrólfsdóttir, Elín Sif Steinarsdóttir Röver og Kristín Líf Örnudóttir. Allar þrjár erum við í tölvunarfræði við Háskóla Íslands. 

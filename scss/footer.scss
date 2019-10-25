@@ -1,1 +1,47 @@
 @import "./config.scss";
+footer {
+  background-color: $color-four;
+  display: flex;
+  flex-direction: column;
+  padding: 40px; 
+    .__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: $max-width;
+        max-width: 100%;
+        font-size: 21px;
+        margin: 0 auto; 
+    }
+    .__card {
+        padding-right: 90px;
+        font-family: $h-fonts; 
+        display:flex;
+    }
+}
+
+li {
+  color: $color-too;
+  font-size: 0.6em;
+  padding-top: 15px; 
+  a {
+    color: $color-too;
+    text-decoration: none;
+    transition: 200ms ease-in-out; 
+        :hover {
+         color:$color-one;
+        }
+    }
+}
+
+ul {
+  font-size: 1em;
+  list-style: none; }
+
+.vorumerki {
+  margin: 0 auto;
+  font-family:$h-fonts;
+  font-size: 0.8em; }
+
+label {
+  font-weight: bold; }

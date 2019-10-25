@@ -1,35 +1,72 @@
 @import "./config.scss";
 
-.product__info {
-    max-width: $max-width/3;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
-    align-content: space-around;
-    
-    &__cards {
-        max-width: 1200px;
+.product{
+    .__info {
+        display: flex;
+        padding:20px;
+        justify-content: center;
+        align-content: center;
+    }
+    .__cards{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width:1200px;
+        font:1rem "open sans", helvetica, arial, sans-serif;
+    }
+    .__card{
+        display: flex;
+        width:26%;
+        margin: 20px 0;
+    }
+    .__text{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow:1;
+    }
+    .product__text2{
+        width:100%;
+        font-size:80%;
+    }
+    .__fjoldi{
         display:flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
-        align-content: space-around;    
+        flex-wrap: wrap;
     }
-    &__card{
-        max-width:30%;
-        display:flex;
-        padding: 20px 0;
+    .__input{
+        max-width: 30px;
     }
-    &__mynd {
-      width: 50px;
+    .__button{
+        display: flex;
     }
-    &__text {
-        text-align: center;
-        & h2 {
-            font-family: $h-fonts;
-        }
-        & p {
-            font-family: $p-fonts;
-        }
+    .__button{
+        max-height: 15px;
+        max-width:15px;
     }
 }
+
+.Setja_i_korfu{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    transition: 200ms ease-in-out;
+    :hover{
+        background-color:#00b7ff;
+        border: #00b7ff;
+    }
+    p{
+        text-align: center;
+        font-weight: bold; 
+    }
+}
+.vara{
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+  }

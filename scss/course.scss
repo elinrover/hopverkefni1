@@ -1,5 +1,4 @@
 @import "config";
-
 .course {
     display: flex;
     max-width: $max-width;
@@ -7,37 +6,40 @@
     flex-flow: row wrap;
     justify-content: space-between;
     padding: $gutter;
-
-    & h2 {
-        font-family: $h-fonts;
+    justify-content: center;
+    h2 {
+        font-family: $h-fonts; 
     }
-
-    & p {
+    p {
+        font-family: $p-fonts; 
+    }
+    label {
         font-family: $p-fonts;
+        font-weight: 500; 
     }
-    & label{
-        font-family: $p-fonts;
-        font-weight: 500;
-    }
-    
-    &__card{
-        width: 50%;
-        display: inline-block;
-    }
-
-    &__buy__info{
-        display: flex;
-        justify-content: space-between;
-        padding: 5px;
-    }
-    &__input{
-        width: 75%;
-    }
-    &__button{
+    .__card {
         width: 100%;
-        margin-left:35%;
+        max-width:35%;
+    }
+    .__buy{
+        padding-right:50px;
+        .__info {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px; 
+        }
+    }
+    .__input {
+        max-width: 60%;
+        width:100%; 
+    }
+    .__button {
+        width: 100%;
+        margin-left: 35%;
         margin-right: 35%;
-         &__init{
+        padding-top: $gutter;
+        .__init {
+            height: 25px;
             display: flex;
             margin-left: auto;
             margin-right: auto;
@@ -45,12 +47,35 @@
             align-items: center;
             background-color:$color-four;
             border-radius: 3px;
-            border-color:$color-four;
-            min-width: 50%;
-            &:hover{
-                border-color:$color-three;
-                background-color:$color-three;
-            }
-         }
+            border-color: $color-four;
+            min-width: 50%; 
+            transition: all 200ms ease-in-out 0s;
+            :hover{
+                border-color: $color-three;
+                background-color: $color-three;
+                color:$color-too;
+              }
+        } 
     }
+    .__input__kort1{
+        width:45px;
+      }
+      .__input__kort2{
+        width:60px;
+      }
 }
+
+   @media(max-width:500px){
+        .course__card{
+          max-width:100%;
+        }
+      }
+      @media(max-width:800px){
+        .course__card{
+          max-width:50%;
+        }
+        .__buy__info{
+          width:80%;
+        }
+      }
+      

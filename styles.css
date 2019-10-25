@@ -27,7 +27,6 @@ header {
   justify-content: center;
 }
 .box__header{
-    display:1200px;
     display: flex;
     flex-direction: column;
     max-width: 1200px;

@@ -1,1 +1,84 @@
 @import "./config";
+
+header {
+    background-color:$color-three;
+    display: flex;
+    justify-content: center;}
+
+.box__header{
+      display: flex;
+      flex-direction: column;
+      max-width: $max-width;
+      justify-content: center; }
+      
+.cart__title {
+      display: flex; }
+
+.cart__card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      font-weight: bold;}
+
+@media (max-width: 500px){
+    .box__content{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.box__karfa{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-family: "Open Sans", helvetica, arial, sans-serif;  
+    width:24%;
+    margin-left: 120%;
+    a {
+      text-decoration: none;
+      color: $color-one;
+      transition: 200ms ease-in-out;
+    }
+    a:hover{
+      color:$color-too;
+    }
+}
+  
+.linkur__current {
+    color:$color-one;
+    font-family: "Open sans", helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom:1px solid $color-one; 
+    :hover{
+        border-bottom:1px solid $color-too;
+        color: $color-too;
+    }
+}
+
+.linkur{
+    color: $color-one;
+    font-weight: bold;
+    display: inline-block;
+    align-items: flex-end;
+    flex-direction: row;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 200ms ease-in-out;
+    :hover{
+      color: $color-too;
+    }
+}
+.linkar {
+  display: inline-block;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  a{
+      margin: 10px;
+      text-decoration: none;
+    }
+}
+  
