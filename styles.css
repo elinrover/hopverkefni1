@@ -499,7 +499,6 @@ div {
     .staff__text p {
       font-family: "Open sans", helvetica, Arial, sans-serif; }
       
-<<<<<<< HEAD
       .course {
         display: flex;
         max-width: 1200px;
@@ -569,45 +568,3 @@ div {
               background-color: #ff5000;
 
             }
-=======
-.course {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 20px; }
-  .course h2 {
-    font-family: "Oswald", Verdana, serif; }
-  .course p {
-    font-family: "Open sans", helvetica, Arial, sans-serif; }
-  .course label {
-    font-family: "Open sans", helvetica, Arial, sans-serif;
-    font-weight: 500; }
-  .course__card {
-    width: 50%;
-    display: inline-block; }
-  .course__buy__info {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px; }
-  .course__input {
-    width: 75%; }
-  .course__button {
-    width: 100%;
-    margin-left: 35%;
-    margin-right: 35%; }
-    .course__button__init {
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      justify-content: center;
-      align-items: center;
-      background-color: #00b7ff;
-      border-radius: 3px;
-      border-color: #00b7ff;
-      min-width: 50%; }
-      .course__button__init:hover {
-        border-color: #ff5000;
-        background-color: #ff5000; }
->>>>>>> dfd00178c0ef9c35e996c3bb1beb0b331768c949
